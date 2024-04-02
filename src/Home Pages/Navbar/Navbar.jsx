@@ -1,11 +1,5 @@
-
-
 const Navbar = () => {
-    return (
-        <div>
-            Navbar
-        </div>
-    );
+  return <div className="fixed z-20">Navbar</div>;
 };
 
 export default Navbar;
