@@ -9,9 +9,9 @@ import "swiper/css/navigation";
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
-import img from "../../assets/Banner.jpg";
-import img1 from "../../assets/Banner1.jpg";
-import img2 from "../../assets/Banner2.jpg";
+import img from "/public/Banner.png";
+import img2 from "/public/Banner2.png";
+import img3 from "/public/Banner3.png";
 const Banner = () => {
   return (
     <>
@@ -19,7 +19,7 @@ const Banner = () => {
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
-          delay: 3000,
+          delay: 7000,
           disableOnInteraction: false,
         }}
         pagination={{
@@ -30,14 +30,14 @@ const Banner = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img className="w-[1600px] h-[900px]" src={img} alt="" />
-        </SwiperSlide>
-        {/* <SwiperSlide>
-          <img className="w-[850px] " src={img1} alt="" />
+          <img className="w-[1950px] h-[600px] bg-zinc-100" src={img} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className="w-[850px] " src={img2} alt="" />
-        </SwiperSlide> */}
+          <img className="w-[1950px] h-[600px] bg-zinc-100" src={img2} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img className="w-[1950px] h-[600px] bg-zinc-100" src={img3} alt="" />
+        </SwiperSlide>
       </Swiper>
     </>
   );
